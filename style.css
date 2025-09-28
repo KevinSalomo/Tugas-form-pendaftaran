@@ -1,0 +1,119 @@
+/* style.css */
+
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container utama */
+.main {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-title h2 {
+  color: #333;
+  font-size: 1.8rem;
+}
+
+/* Gaya umum label dan input */
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  transition: border-color 0.2s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Baris inline (radio, checkbox) */
+.inline-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-bottom: 15px;
+}
+
+.inline-row label {
+  font-weight: 500;
+}
+
+/* Tombol aksi */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn.secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+.btn.secondary:hover {
+  background-color: #bbb;
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  .main {
+    padding: 20px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

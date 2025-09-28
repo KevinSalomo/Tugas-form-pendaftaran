@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+
+    <main class="main" aria-label="Form pendaftaran">
+      <div class="main-title">
+        <h2>Form Pendaftaran </h2>
+       
+      </div>
+
+      <form id="registration" autocomplete="on" novalidate>
+        <div class="full group">
+          <label for="fullname">Nama Lengkap</label>
+          <input id="fullname" name="fullname" type="text" placeholder= >
+        
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder= >
+        </div>
+
+        <div>
+          <label for="phone">Nomor Telepon</label>
+          <input id="phone" name="phone" type="tel" placeholder=>
+        </div>
+
+        <div>
+          <label>Jenis Kelamin</label>
+          <div class="inline-row" role="radiogroup" aria-label="Jenis kelamin">
+            <label><input type="radio" name="gender" value="male" checked> Laki-laki</label>
+            <label><input type="radio" name="gender" value="female"> Perempuan</label>
+
+          </div>
+        </div>
+
+        <div>
+          <label>Hobi</label>
+          <div class="inline-row">
+            <label><input type="checkbox" name="hobby" value="study"> Belajar</label>
+            <label><input type="checkbox" name="hobby" value="swim"> Berenang</label>
+            <label><input type="checkbox" name="hobby" value="dance"> Menari</label>
+            <label><input type="checkbox" name="hobby" value="read"> Membaca</label>    
+          </div>
+        </div>
+
+        <div>
+          <label for="dob">Tanggal Lahir</label>
+          <input id="dob" name="dob" type="date" required>
+        </div>
+
+        <div>
+          <label for="program">Program Studi</label>
+          <select id="program" name="program" required>
+            <option value="">Pilih program</option>
+            <option>Sistem Informasi</option>
+            <option>Teknologi Informasi</option>
+            <option>Desain Komunikasi</option>
+            <option>Ilmu Komunikasi</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label for="address">Alamat Lengkap</label>
+          <textarea id="address" name="address" placeholder="Masukan Alamat Lengkap" required></textarea>
+        </div>
+
+    
+
+        <div class="actions">
+          <button type="button" class="btn secondary" onclick="document.getElementById('registration').reset()">Reset</button>
+          <button type="submit" class="btn">Daftar Sekarang</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+</body>
+</html> 
