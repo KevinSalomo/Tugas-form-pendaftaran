@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validasi</title>
+  <link rel="stylesheet" href="./stlyle.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Form Validasi</h2>
+    <form id="myForm" novalidate>
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" placeholder="Masukkan nama lengkap" required />
+      <small class="error" id="namaError"></small>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="contoh@email.com" required />
+      <small class="error" id="emailError"></small>
+
+      <label for="umur">Umur:</label>
+      <input type="number" id="umur" placeholder="Masukkan umur" min="1" required />
+      <small class="error" id="umurError"></small>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Minimal 6 karakter" required />
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Kirim</button>
+    </form>
+    <p id="successMessage"></p>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
